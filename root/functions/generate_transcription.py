@@ -21,6 +21,7 @@ def generate_transcription(output_audio_f):
     logits = model(input_values).logits
     predicted_ids = torch.argmax(logits, dim=-1)
     transcription = tokenizer.batch_decode(predicted_ids)[0]
+    #print(transcription)
 
     print(fun_name + ' finished')
     return transcription

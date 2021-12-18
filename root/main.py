@@ -11,8 +11,8 @@ import os
 check_tool = language_tool_python.LanguageTool('en-US')
 
 if __name__ == '__main__':
-    folder = '/home/eb/Videos/arf/'
-    #folder = '/Users/eb/Movies/arf/'
+    #folder = '/home/eb/Videos/arf/'
+    folder = '/Users/eb/Movies/arf/'
     file_input = 'input.mp4'
     file_output_temp = 'temp_output.mp4'
     to_find = 'set'
@@ -30,7 +30,7 @@ if __name__ == '__main__':
         transcription = generate_transcription(output_audio_f)
 
         transcription_updated = correct_text(transcription, check_tool)
-        #print(transcription_updated)
+        print(transcription_updated)
         final_text += transcription_updated
 
         found = find_prove_it(transcription_updated, output_audio_f, to_find, video_token)
