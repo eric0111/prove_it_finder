@@ -1,12 +1,12 @@
 import re
 import datetime
 
-from functions.find_prove_it.utils import get_sec
+from functions.find_in_text.utils import get_sec
 from functions.let_at_sec import generate_letters_at_sec
 from functions.tokenize_video.video_token import VideoToken
 
 
-def find_prove_it(transcription, file_name, to_find, video_token : VideoToken):
+def find_in_text(transcription, file_name, to_find, video_token : VideoToken):
     transcription = transcription.lower()
 
     ll = []
