@@ -1,6 +1,5 @@
 import re
 import datetime
-
 from functions.find_in_text.utils import get_sec
 from functions.let_at_sec import generate_letters_at_sec
 from functions.tokenize_video.video_token import VideoToken
