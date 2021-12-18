@@ -33,6 +33,6 @@ def finder(file_input, folder, secs,  to_find, CHECK_TOOL, TOKENIZER,MODEL, os):
             # print(out, file=open(folder + 'log.txt', 'w'))
         # print(found, video_token.ss)
 
-    print(found_log, file=open(folder + file_input + 'raw_text.txt', 'w'))
+    print(raw_text, file=open(folder + file_input + 'raw_text.txt', 'w'))
     print(final_text, file=open(folder + file_input + 'final_text.txt', 'w'))
     print(found_log, file=open(folder + file_input + 'found_log.txt', 'w'))
