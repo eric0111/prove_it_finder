@@ -1,9 +1,7 @@
-import os
-
 from functions.tokenize_video.video_token import VideoToken
 
 
-def select_and_generate_audio(folder, file_input, file_output, video_token:VideoToken):
+def select_and_generate_audio(folder, file_input, file_output, video_token:VideoToken, os):
     fun_name = 'select_and_generate_audio'
     print(fun_name + ' started')
 
